@@ -388,13 +388,13 @@ export type Template = string;
 export type DynamicTemplate = string;
 
 /**
- * @TJS-pattern ^(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)$
+ * @TJS-pattern ^(?:[01]\d|2[0-3]):(?:[0-5]\d):(?:[0-5]\d)$
  */
 export type Time = string;
 
 /**
- * @TJS-pattern ^(?:[01]\d|2[0123]):(?:[012345]\d)(:(?:[012345]\d))?$
- * @items.pattern ^(?:[01]\d|2[0123]):(?:[012345]\d)(:(?:[012345]\d))?$
+ * @TJS-pattern ^(?:[01]\d|2[0-3]):(?:[0-5]\d)(:(?:[0-5]\d))?$
+ * @items.pattern ^(?:[01]\d|2[0-3]):(?:[0-5]\d)(:(?:[0-5]\d))?$
  */
 export type Times = string | string[];
 

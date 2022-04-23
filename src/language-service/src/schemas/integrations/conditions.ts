@@ -410,7 +410,7 @@ export interface TimeCondition {
    * Note that if only before key is used, the condition will be true from midnight until the specified time.
    * https://www.home-assistant.io/docs/scripts/conditions/#time-condition
    *
-   * @TJS-pattern ^((input_datetime|sensor)\.(?!_)[\da-z_]+(?<!_)|(?:[01]\d|2[0123]):(?:[012345]\d)(:(?:[012345]\d))?)$
+   * @TJS-pattern ^((input_datetime|sensor)\.(?!_)[\da-z_]+(?<!_)|(?:[01]\d|2[0-3]):(?:[0-5]\d)(:(?:[0-5]\d))?)$
    */
   before?: Time | InputDatetimeEntity | SensorEntity;
 
@@ -419,7 +419,7 @@ export interface TimeCondition {
    * Note that if only after key is used, the condition will be true from the specified time until midnight.
    * https://www.home-assistant.io/docs/scripts/conditions/#time-condition
    *
-   * @TJS-pattern ^((input_datetime|sensor)\.(?!_)[\da-z_]+(?<!_)|(?:[01]\d|2[0123]):(?:[012345]\d)(:(?:[012345]\d))?)$
+   * @TJS-pattern ^((input_datetime|sensor)\.(?!_)[\da-z_]+(?<!_)|(?:[01]\d|2[0-3]):(?:[0-5]\d)(:(?:[0-5]\d))?)$
    */
   after?: Time | InputDatetimeEntity | SensorEntity;
 
